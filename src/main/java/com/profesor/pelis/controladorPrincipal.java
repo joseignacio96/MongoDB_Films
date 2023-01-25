@@ -34,15 +34,16 @@ public class controladorPrincipal {
     public void close(ActionEvent actionEvent) {
         System.exit(1);
     }
+    public void hiddeMenu(MouseEvent mouseEvent) {
+        menuCompleto.setVisible(true);
+
+    }
 
     public void showMenu(ActionEvent actionEvent) {
         menuCompleto.setVisible(false);
     }
 
-    public void hiddeMenu(MouseEvent mouseEvent) {
-        menuCompleto.setVisible(true);
 
-    }
     public void addFilm(ActionEvent actionEvent) {
         FXMLLoader fxmlLoader;
         Parent root = null;

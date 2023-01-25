@@ -1,34 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.profesor.pelis.controladorPrincipal">
    <left>
-      <VBox fx:id="menu" prefHeight="200.0" prefWidth="150.0" styleClass="fondo" BorderPane.alignment="CENTER">
+      <VBox fx:id="menu" prefHeight="526.0" prefWidth="210.0" styleClass="fondo" BorderPane.alignment="CENTER">
          <children>
-            <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#hiddeMenu" prefHeight="53.0" prefWidth="150.0" styleClass="btn-menu" text="Peliculas" />
-            <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="150.0" styleClass="btn-menu" text="Directores" />
-            <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="btn-menu" text="Generos" />
-            <Button fx:id="salir" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#close" styleClass="btn-menu" text="Salir" />
+            <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#hiddeMenu" prefHeight="45.0" prefWidth="168.0" styleClass="btn-menu" text="   Peliculas">
+               <graphic>
+                  <FontAwesomeIconView fill="#fffbfb" glyphName="HOME" onMouseClicked="#hiddeMenu" translateX="5.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="btn-menu" text="Generos                  ">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="STAR" translateX="-10.0" />
+               </graphic>
+            </Button>
+            <Button alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="45.0" prefWidth="168.0" styleClass="btn-menu" text="Directores              ">
+               <graphic>
+                  <FontAwesomeIconView fill="#fffbfb" glyphName="USER" translateX="-10.0" />
+               </graphic>
+            </Button>
+            <Button fx:id="salir11" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#close" styleClass="btn-menu" text="Salir                        ">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="STOP" translateX="-10.0" />
+               </graphic>
+            </Button>
             <StackPane fx:id="menuCompleto" prefHeight="233.0" prefWidth="150.0">
                <children>
                   <VBox prefHeight="79.0" prefWidth="150.0" stylesheets="@main.css">
                      <children>
-                        <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showMenu" prefHeight="53.0" prefWidth="150.0" styleClass="btn-menu" stylesheets="@main.css" text="Peliculas" />
-                        <Button fx:id="buttonFIlm1" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addFilm" prefHeight="53.0" prefWidth="150.0" styleClass="btn-menu" text="Añadir Peliculas" />
-                        <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showFilm" prefHeight="53.0" prefWidth="150.0" styleClass="btn-menu" text="Mostrar Peliculas" />
-                        <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="150.0" styleClass="btn-menu" text="Directores" />
-                        <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="btn-menu" text="Generos" />
-                        <Button fx:id="salir1" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#close" styleClass="btn-menu" text="Salir" />
+                        <Button alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showMenu" prefHeight="53.0" prefWidth="150.0" styleClass="btn-menu" text="    Peliculas                    ">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOME" text="" translateX="7.0" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="-340.0" />
+                           </VBox.margin>
+                           <stylesheets>
+                              <URL value="@main.css" />
+                              <URL value="@main.css" />
+                           </stylesheets>
+                        </Button>
+                        <Button fx:id="buttonFIlm1" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addFilm" prefHeight="53.0" prefWidth="150.0" styleClass="btn-menu" text="   Añadir Peliculas         ">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="FILM" translateX="5.0" />
+                           </graphic></Button>
+                        <Button alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showFilm" prefHeight="53.0" prefWidth="150.0" styleClass="btn-menu" text="Mostrar Peliculas   ">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PHOTO" translateX="-10.0" />
+                           </graphic></Button>
+                        <Button alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="45.0" prefWidth="168.0" styleClass="btn-menu" text="Directores              ">
+                           <graphic>
+                              <FontAwesomeIconView fill="#fffbfb" glyphName="USER" translateX="-10.0" />
+                           </graphic></Button>
+                        <Button alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="btn-menu" text="Generos                  ">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="STAR" translateX="-10.0" />
+                           </graphic></Button>
+                        <Button fx:id="salir1" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#close" styleClass="btn-menu" text="Salir                        ">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="STOP" translateX="-10.0" />
+                           </graphic></Button>
                      </children>
                      <StackPane.margin>
-                        <Insets top="-340.0" />
+                        <Insets />
                      </StackPane.margin>
                   </VBox>
                </children>
@@ -45,7 +93,10 @@
    <top>
       <HBox alignment="CENTER" prefHeight="74.0" prefWidth="600.0" styleClass="fondo" BorderPane.alignment="CENTER">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texto-cabecera" text="Mi ejemplo de aplicación" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tittle" text="DASHBOARD">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Text>
          </children>
       </HBox>
    </top>

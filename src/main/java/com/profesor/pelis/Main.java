@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.bson.Document;
 
 import java.io.IOException;
@@ -38,6 +39,7 @@ public class Main extends Application {
         Scene scene = new Scene(mainScene);
         stage.setTitle("Información de peliculas");
         stage.setResizable(false);
+        stage.initStyle(StageStyle.UTILITY);
         stage.setScene(scene);
         stage.show();
     }

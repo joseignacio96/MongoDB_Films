@@ -1,5 +1,5 @@
 .fondo  {
-    -fx-background-color:  #1D3557;
+    -fx-background-color:  #FF6961;
 }
 
 .texto-cabecera {
@@ -10,7 +10,7 @@
 }
 
 .btn-menu  {
-    -fx-background-color: #457B9D;
+    -fx-background-color: #FF6961;
     -fx-text-fill: white;
     -fx-font-size: 16px;
     -fx-padding: 10px;
@@ -19,21 +19,28 @@
 }
 
 .btn-menu:hover {
-     -fx-background-color: #A8DACD;
-     -fx-text-fill: black;
+     -fx-background-color: #E2827E;
+     -fx-text-fill: white;
 
 }
 
 .btn-menu:pressed {
-      -fx-background-color: white;
-      -fx-text-fill:  #457B9D;
+      -fx-background-color: #FFFFFF;
+      -fx-text-fill:  #FFFFFF;
       -fx-font-weight: bold;
 
 }
 
 .btn-menu:focused {
-     -fx-border-color: #A8DACD;
+     -fx-border-color: #D5445;
      -fx-border-width: 2px;
-     -fx-background-color: #457b9d;
+     -fx-background-color: #FF574D;
+     -fx-font-weight: bold;
+}
+
+.tittle {
+     -fx-border-color: #D5445;
+     -fx-border-width: 100px;
+     -fx-background-color: #FF574D;
      -fx-font-weight: bold;
 }
