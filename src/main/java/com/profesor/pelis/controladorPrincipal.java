@@ -23,8 +23,6 @@ public class controladorPrincipal {
 
     public Button salir;
 
-
-
     public VBox menu;
     public StackPane menuCompleto;
 

@@ -27,7 +27,6 @@ public class Main extends Application {
 
     public static BorderPane mainScene;
 
-
     @Override
     public void start(Stage stage) throws IOException {
 
