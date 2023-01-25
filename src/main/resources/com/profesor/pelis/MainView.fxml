@@ -96,7 +96,10 @@
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tittle" text="DASHBOARD">
                <font>
                   <Font name="System Bold" size="20.0" />
-               </font></Text>
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin></Text>
          </children>
       </HBox>
    </top>
