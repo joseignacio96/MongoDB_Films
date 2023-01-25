@@ -32,14 +32,14 @@
 }
 
 .btn-menu:focused {
-     -fx-border-color: #D5445;
+     -fx-border-color: #D54451;
      -fx-border-width: 2px;
      -fx-background-color: #FF574D;
      -fx-font-weight: bold;
 }
 
 .tittle {
-     -fx-border-color: #D5445;
+     -fx-border-color: #D54451;
      -fx-border-width: 100px;
      -fx-background-color: #FF574D;
      -fx-font-weight: bold;
