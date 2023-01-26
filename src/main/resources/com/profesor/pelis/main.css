@@ -38,9 +38,47 @@
      -fx-font-weight: bold;
 }
 
+.btnDelete {
+    -fx-background-color: #FF6961;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+.btnAdd {
+    -fx-background-color: #FF6961;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+
+}
+
+.btnDirecClose {
+    -fx-background-color: #FF6961;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+.btnDirecAdd {
+    -fx-background-color: #FF6961;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+
 .tittle {
      -fx-border-color: #D54451;
-     -fx-border-width: 100px;
+     -fx-border-width: 12px;
      -fx-background-color: #FF574D;
      -fx-font-weight: bold;
 }

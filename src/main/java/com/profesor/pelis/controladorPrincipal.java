@@ -45,18 +45,10 @@ public class controladorPrincipal {
 
 
     public void addFilm(ActionEvent actionEvent) {
-        FXMLLoader fxmlLoader;
-        Parent root = null;
 
         try {
-            Stage primaryStage = new Stage();
-            fxmlLoader = new  FXMLLoader(getClass().getResource("registerUser.fxml"));
-            root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            primaryStage.setTitle("User");
-            primaryStage.setScene(scene);
-            primaryStage.initModality(Modality.APPLICATION_MODAL);
-            primaryStage.show();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("registerUser.fxml"));
+            Main.mainScene.setCenter(fxmlLoader.load());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
