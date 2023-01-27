@@ -36,6 +36,7 @@ public class RegisterUser {
     Stage stage;
 
     public void initialize() {
+        listVIew.setItems(directores);
 
     }
 
@@ -61,7 +62,6 @@ public class RegisterUser {
     public void addValue(ActionEvent actionEvent) {
         String campo = labelDirec.getText();
         directores.add(campo);
-        listVIew.setItems(directores);
         System.out.println(listVIew.toString());
         closeStage(new ActionEvent());
     }
